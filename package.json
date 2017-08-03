@@ -1,0 +1,42 @@
+{
+  "name": "npm-audit",
+  "version": "0.0.1",
+  "description": "Audit your NPM dependencies for malicious packages",
+  "main": "index.js",
+  "bin": {
+    "npm-audit": "bin/npm-audit"
+  },
+  "scripts": {
+    "postinstall": "node bin/npm-audit",
+    "lint": "make lint",
+    "audit": "node bin/npm-audit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jshanson7/npm-audit.git"
+  },
+  "keywords": [
+    "npm",
+    "dependency",
+    "audit",
+    "blacklist",
+    "npm-audit"
+  ],
+  "author": "Jeff Hanson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jshanson7/npm-audit/issues"
+  },
+  "homepage": "https://github.com/jshanson7/npm-audit#readme",
+  "dependencies": {
+    "chalk": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0"
+  }
+}
