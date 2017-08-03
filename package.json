@@ -1,6 +1,6 @@
 {
   "name": "npm-audit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Audit your NPM dependencies for malicious packages",
   "main": "index.js",
   "bin": {
