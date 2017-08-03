@@ -32,13 +32,13 @@ function auditPackage(pkg) {
 
     blacklist.forEach(function (dependency) {
       if (Object.prototype.hasOwnProperty.call(dependencies, dependency)) {
-        throw new Error(
+        console.log(
           chalk.bold.red('Malicious dependency detected') +
-          '\n\t Package: ' +
+          '\n   Package: ' +
           chalk.bold.red(dependency) +
-          '\n\t File: ' +
-          chalk.yellow(pkg.file) +
-          '\n\t For more information, visit ' +
+          '\n   File: ' +
+          chalk.yellow('/Users/jeff/npm-audit/node_modules/some-dependency/package.json') +
+          '\n   For more information, visit ' +
           chalk.underline.cyan('https://github.com/jshanson7/npm-audit')
         );
       }
