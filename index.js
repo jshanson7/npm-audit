@@ -37,7 +37,7 @@ function auditPackage(pkg) {
           '\n   Package: ' +
           chalk.bold.red(dependency) +
           '\n   File: ' +
-          chalk.yellow('/Users/jeff/npm-audit/node_modules/some-dependency/package.json') +
+          chalk.yellow(pkg.file) +
           '\n   For more information, visit ' +
           chalk.underline.cyan('https://github.com/jshanson7/npm-audit')
         );
